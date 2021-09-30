@@ -1,0 +1,24 @@
+Este proyecto está basado en esta serie de vídeos: https://www.youtube.com/watch?v=lBKNyxjeHgg&list=PLbbXVB88ZrRERkUOw4BmnIyPT_FXUZH8u
+
+
+1- Python refresher
+
+
+2- Website 1: Word Count
+El fichero urls.py redireccionará a cualquier fichero html la petición recibida. Para ello, en el path, hay que indicar cuál es el recurso por el que se pregunta y cuál es la función que contiene la respuesta. Esta función hay que definirla en views.py.
+
+Para que se devuelva un fichero html, hay que crear un directorio al mismo nivel que la aplicación wordcount. Le ponemos templates y en la directiva DIRS de TEMPLATES en el fichero settings, añadimos que se encuentran en ese directorio.
+Para usarlo en la función definida en views, hay que importar render.
+A render hay que pasarle el objeto request y el nombre de la template
+Con comas se le pueden pasar objetos que se usen en el html, por ejemplo un diccionario, que se accede con {{ clave }}
+
+3- GIt
+
+
+4- Website 2: Portfolio
+
+
+5- Publishing a website
+
+
+6- Website 3: Product Hunt Clone
