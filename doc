@@ -12,6 +12,11 @@ Para usarlo en la función definida en views, hay que importar render.
 A render hay que pasarle el objeto request y el nombre de la template
 Con comas se le pueden pasar objetos que se usen en el html, por ejemplo un diccionario, que se accede con {{ clave }}
 
+En el tutorial, después, a la página de inicio le añade una textarea y un botón. ESte botón nos llevará a otra página 'count'. Por si quisieramos cambiar el nombre de este recurso, en la action del form ponemos {% url 'count' %} y así nos llevará al recurso que tenga ese nombre. Para ello en las url hay que añadir name='count'
+
+Si escribimos algo y hacemos click en el botón, en la url veremos fulltext=textoquehayamosmetido. Esto se accede en la funcion count, con request.GET['fulltext']
+
+
 3- GIt
 
 

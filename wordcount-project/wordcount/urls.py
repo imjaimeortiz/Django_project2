@@ -21,5 +21,11 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     
     # Path for the home page
-    path('', views.home)
+    path('', views.home, name='home'),
+
+    # Path for the button count
+    path('count/', views.count, name='count'),
+
+    # Path for the button about
+    path('about/', views.about, name='about'),
 ]

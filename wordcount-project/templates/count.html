@@ -1,0 +1,14 @@
+{{ fulltext }}
+
+<h1>There are {{ count }} words in your text</h1>
+
+<a href="{% url 'home' %}">Start again</a>
+
+<h2>This is the dictionary</h2>
+
+{% for word, total in dic %}
+
+{{ word }} : {{ total }}
+<br />
+
+{% endfor %}
